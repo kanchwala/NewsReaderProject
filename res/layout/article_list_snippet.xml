@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="@dimen/padding_list">
+    
+	<TextView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/tv_title_snippet"
+	    android:text="test"
+	    android:textSize="@dimen/ts_artice_list_title"/>
+	<TextView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/tv_author_snippet"
+	    android:text="test"
+	    android:layout_below="@+id/tv_title_snippet"
+	    android:textSize="@dimen/ts_article_list_auth_date"/>
+	<TextView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/tv_date_snippet"
+	    android:layout_below="@+id/tv_author_snippet"
+	    android:text="test"
+	    android:textSize="@dimen/ts_article_list_auth_date"/>
+    
+</RelativeLayout>

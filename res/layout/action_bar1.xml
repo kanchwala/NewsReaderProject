@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal" 
+    android:baselineAligned="false"
+    android:background="@drawable/action_bar_bg"
+    android:layoutDirection="ltr">
+    
+   <ImageView
+       android:layout_width="48dp"
+       android:layout_height="40dp"
+       android:layout_alignParentLeft="true"
+       android:layout_centerVertical="true"
+       android:src="@drawable/icon" 
+       android:paddingLeft="5sp"
+       android:id="@+id/imgv_ab_icon"/>
+         
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_toLeftOf="@+id/imv_separator1"
+       android:layout_toRightOf="@+id/imgv_ab_icon" >
+
+    	<TextView android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:text="@string/home"
+        	android:id="@+id/tv_ab_1"
+        	android:gravity="center_vertical"
+        	android:textAlignment="center"
+        	android:layout_centerVertical="true"
+        	android:layout_centerHorizontal="true"
+        	android:textSize="@dimen/action_bar_textsize"
+        	style="@style/ActionBarTheme">
+    	</TextView>
+    	</RelativeLayout>
+    	
+    	<ImageView android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:background="@drawable/actionbar_compat_separator"
+       android:layout_toLeftOf="@+id/txt_settings"
+       android:id="@+id/imv_separator1"></ImageView>
+    	 <ImageButton android:layout_width="@dimen/control_width"
+        android:layout_height="match_parent"
+        android:src="@drawable/actionbar_settings_icon"
+        android:id="@+id/txt_settings"
+        android:onClick="onClickSettings"
+        android:background="@drawable/button_slection"
+        android:layout_toLeftOf="@+id/tv_about1"
+       	android:paddingLeft="5sp"
+       	android:paddingRight="5sp"
+        />
+   <ImageView android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:background="@drawable/actionbar_compat_separator"
+       android:layout_toLeftOf="@+id/tv_about1"></ImageView>
+    
+    
+    <ImageButton android:layout_width="@dimen/control_width"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_about"
+        android:id="@+id/tv_about1"
+        android:onClick="onClickAbout"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_slection"
+        style="@style/ActionBarTheme"/>
+    
+  </RelativeLayout>

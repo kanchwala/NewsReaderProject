@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="action_bar_textsize">22sp</dimen>
+    <dimen name="title_article_textsize">28sp</dimen>
+    <dimen name="auth_date_textsize">15sp</dimen>
+    <dimen name="summary_textsize">22sp</dimen>
+    <dimen name="summary_content_textsize">19sp</dimen>
+    <color name="grey">#E0E0E0</color>
+    <color name="action_bar_white">#FFFFFF</color>
+    <dimen name="article_auth_date_title_pad">8sp</dimen>
+    <dimen name="article_auth_date">4sp</dimen>
+    <dimen name="article_iv_padding">15sp</dimen>
+    <dimen name="preferences_textsize">19sp</dimen>
+    <color name="link">#3366FF</color>
+    <dimen name="article_list_title_ts">25sp</dimen>
+    <dimen name="article_list_other_ts">19sp</dimen>
+    <color name="action_bar_red">#A00A04</color>
+    <dimen name="article_list_padding">8sp</dimen>
+    <color name="feedzilla_blue">#73D9FF</color>
+	<dimen name="control_width">45sp</dimen>
+	<dimen name="padding_list">10sp</dimen>
+	<dimen name="ts_artice_list_title">22sp</dimen>
+	<dimen name="ts_article_list_auth_date">18sp</dimen>
+	<color name="transparent">#00000000</color>
+	<dimen name="paddding_left_culture_list">5sp</dimen>
+	<color name="black">#000000</color>
+	<dimen name="link_text_size">20sp</dimen>
+</resources>

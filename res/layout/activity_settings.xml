@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <include layout="@layout/action_bar2"
+        android:id="@+id/action_bar2"
+        />
+    
+    <TableLayout android:layout_width="wrap_content"        
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/action_bar2">      
+    
+        <TableRow >
+        	<TextView android:layout_width="wrap_content"        
+          		android:layout_height="wrap_content"
+          		android:id="@+id/tv_version_heading"
+          		android:text="@string/version"
+          		style="@style/headings_settings"
+          		android:padding="@dimen/article_iv_padding"
+	          />
+        </TableRow>
+        
+    	
+	  	
+    	<TableRow >
+    		<TextView android:layout_height="wrap_content"
+        		android:layout_width="wrap_content"
+        		android:text="@string/version"
+        		android:padding="@dimen/article_iv_padding"
+        		android:id="@+id/tv_version"/>
+    	</TableRow>
+    	<View
+        	android:layout_height="2dip"
+        	android:background="@color/feedzilla_blue" />
+    	<TableRow >
+    		<TextView android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:text="@string/preferences"
+        		
+        		android:id="@+id/tv_preferencesheading"
+        		style="@style/headings_settings"
+        		android:padding="@dimen/article_iv_padding"
+        	/>
+   		</TableRow>
+        <TableRow android:clickable="true"
+            android:onClick="onClickPreferences">
+    
+  
+		  	<TextView android:layout_width="wrap_content"
+      			android:layout_height="wrap_content"
+      			
+      
+				android:id="@+id/tv_preferences" 
+      			android:padding="@dimen/article_iv_padding"
+      			android:hint="@string/default_preference"
+      			
+    		/>  
+    		
+      
+  		</TableRow>
+   		 <View
+        	android:layout_height="2dip"
+        	android:background="@color/feedzilla_blue" />
+   		 
+   		 <TableRow >
+   		     <TextView android:layout_width="wrap_content"
+   		     android:layout_height="wrap_content"
+   		     style="@style/headings_settings"
+   		     android:text="@string/font"
+   		     android:padding="@dimen/article_iv_padding"
+   		     android:id="@+id/tv_fonts_heading"/>
+   		 </TableRow>
+   		 
+   		 <TableRow android:clickable="true"
+   		     android:onClick="onClickFonts">
+   		     
+   		     <TextView android:layout_width="wrap_content"
+      			android:layout_height="wrap_content"
+      			
+      			
+				android:id="@+id/tv_fonts" 
+      			android:padding="@dimen/article_iv_padding"
+      			android:hint="@string/default_fonts"/>
+   		     
+   		 </TableRow>
+   		  <View
+        	android:layout_height="2dip"
+        	android:background="@color/feedzilla_blue" />
+   		 
+    </TableLayout>  
+    
+   
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+   
+    
+  <RelativeLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/rl_aricle"
+      android:paddingBottom="@dimen/padding_list"
+      >
+      
+       <include
+           android:id="@+id/ab_article"
+           
+           layout="@layout/action_bar2" />
+       
+       <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/tv_article_title"
+           android:text="Test"
+           android:layout_below="@+id/ab_article"
+           android:textSize="@dimen/title_article_textsize"
+           android:padding="@dimen/article_auth_date_title_pad"
+           android:hint="@string/default_title"/>
+       
+       <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/tv_article_author"
+           android:text="Test"
+           android:layout_below="@+id/tv_article_title"
+           android:textSize="@dimen/auth_date_textsize"
+           android:paddingTop="@dimen/article_auth_date"
+           android:paddingLeft="@dimen/article_auth_date_title_pad"
+           android:hint="@string/default_author"/>
+       
+       <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/tv_article_date"
+           android:text="Test"
+           android:layout_below="@+id/tv_article_author"
+           android:textSize="@dimen/auth_date_textsize"
+           android:paddingTop="@dimen/article_auth_date"
+           android:paddingLeft="@dimen/article_auth_date_title_pad"
+           android:hint="@string/default_date"
+           android:paddingBottom="@dimen/action_bar_textsize"/>
+       
+       
+       
+       
+   <RelativeLayout android:layout_below="@+id/tv_article_date"
+           android:layout_centerInParent="true" 
+           android:padding="@dimen/article_iv_padding" 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/rl_article_screen">
+            
+       
+       
+        <ImageView
+            
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/iv_article"
+          android:src="@drawable/image_download"
+          android:visibility="gone">
+       
+        
+       </ImageView>
+
+          <ProgressBar
+           android:id="@+id/pb_article"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:indeterminateOnly="true" 
+           android:visibility="gone"
+           android:layout_centerInParent="true"/>
+       
+       
+</RelativeLayout>
+       <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/summary"
+           android:textSize="@dimen/summary_textsize"
+           android:layout_below="@+id/rl_article_screen" 
+           android:id="@+id/tv_summary"
+           android:paddingLeft="@dimen/article_auth_date_title_pad"/>
+       
+       <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/summary_content_textsize"
+           android:id="@+id/tv_summarycontent" 
+           android:layout_below="@+id/tv_summary"
+           android:padding="@dimen/article_auth_date_title_pad"
+           android:text="test"/>
+       
+     
+        
+       <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/tv_summarycontent"
+           android:id="@+id/tv_link"
+           android:clickable="true" 
+           android:text="@string/read_more"
+           style="@style/LinkTheme" 
+           android:paddingLeft="@dimen/article_auth_date_title_pad"
+           />
+       
+       <TextView android:layout_width="wrap_content"
+           android:layout_below="@+id/tv_link"
+           android:layout_height="wrap_content"
+           android:paddingRight="@dimen/article_auth_date_title_pad"
+           android:text="@string/source"
+           android:layout_alignParentRight="true"
+           android:paddingLeft="@dimen/article_iv_padding"
+           android:id="@+id/tv_article_source"
+           android:paddingBottom="@dimen/padding_list"/>
+		
+       
+  </RelativeLayout>
+    
+
+</ScrollView>

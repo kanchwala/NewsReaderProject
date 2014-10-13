@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">News Reader</string>
+    <string name="action_settings">Settings</string>
+    <string name="home">Home</string>
+    <string name="categories">Categories</string>
+    <string name="information">Information</string>
+    <string name="font">Font</string>
+    <string name="default_fonts">No font selected</string>
+    <string-array name="fonts_list">
+        <item >Normal</item>
+        <item >Copperplate</item>
+        <item >Android Nation</item>
+        <item >Clarendon</item>
+        <item >California</item>
+        <item >Bank Gothic</item>
+        <item >Cateneo</item>
+        <item >Marker Felt Thin</item>
+        </string-array>
+    <string name="settings">Settings</string>
+    <string name="preferences">Culture</string>
+    <string name="about_small">About</string>
+    <string name="title">Title:</string>
+    <string name="author">Author:</string>
+    <string name="date">Date:</string>
+    <string name="summary">Summary</string>
+    <string name="read_more"><u>Read More..</u></string>
+    <string name="source">Source:</string>
+    <string name="default_title">No title provided</string>
+    <string name="default_date">No date of creation provided</string>
+    <string name="default_author">Anonymous</string>
+    <string name="version">Version</string>
+    <string name="default_preference">No preference selected</string>
+    <string name="no_content_present">No content present</string>
+    <string name="about_title">About News Reader</string>
+    <string name="about_description">Established in 2005, Feedzilla is the #1 name in newsfeed distribution.
+ 
+Under the inspiring leadership of Dimo the newsfeed dinosaur,  Feedzilla has built a massive network of hosted news feeds. Developers love Feedzilla for its high-quality news, and its ease of adoption and customization.
+ 
+Every minute of the day, we generate thousands of valuable click-thrus that bring news-hungry users to our content partner websites.
+Over 50,000,000 impressions monthly
+Content in 7 languages from 16 countries
+250,000 total newsfeed sources
+Indexed in more than 4,000,000 web/mobile pages
+Over 2,000 pre-defined news categories</string>
+    
+
+</resources>
